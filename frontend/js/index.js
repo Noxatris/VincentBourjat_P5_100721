@@ -68,7 +68,7 @@ function creationProduit(value){
         localStorage.setItem("idProduit", this.id); // Sauvegarde de l'Id du produit
     }
     );
-    tabProduit[0].setAttribute("href", "html/pageProduit.html")
+    tabProduit[0].setAttribute("href", "frontend/html/pageProduit.html")
     tabProduit[0].id = value["_id"];
 
     let conteneurProduit = document.getElementsByClassName("listeProduit");

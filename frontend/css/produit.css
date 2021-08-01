@@ -151,121 +151,83 @@ footer a {
     color: black;
 }
 
+/*====================================================================================================================================
+                                                    TABLETTE PORTRAIT
+====================================================================================================================================*/
+@media only screen and (min-width: 600px) {
+
+    /*-----------------------------------
+                PRODUIT
+    -----------------------------------*/
+    section{
+        padding-bottom: 60px;
+    }
+
+    .conteneur_img{
+        height: 400px;
+    }
+}
+
 
 /*====================================================================================================================================
                                                     TABLETTE PAYSAGE
 ====================================================================================================================================*/
 @media only screen and (min-width: 801px) {
 
-/*-----------------------------------
+    /*-----------------------------------
+                HEADER
+    -----------------------------------*/
+    header a p{
+        display: initial;
+    }
+
+
+    /*-----------------------------------
+                PRODUIT
+    -----------------------------------*/
+    section{
+        font-size: 1.3em;
+        width: 75%;
+        margin: 80px auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
+        padding: 0 0 20px 0;
+    }
+
+    .conteneur_img{
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .btn_acceuille{
+        width: 50%;
+    }
+
+    /*-----------------------------------
+                FOOTER
+    -----------------------------------*/
+    footer{
+        height: 100px;
+    }
+
+    .lien_footer{
+        flex-direction: row;
+    }
+
+    .lien_footer a{
+        margin-right: 30px;
+    }
+}
+/*====================================================================================================================================
+                                                    PC
+====================================================================================================================================*/
+@media only screen and (min-width: 1025px) {
+
+    /*-----------------------------------
             PRODUIT
------------------------------------*/
-
-section{
-    display: flex;
-    flex-direction: row;
-    margin: 150px auto;
-    width: 75%;
-}
-
-.conteneur_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.conteneur_img img{
-    width: 100%;
-    height: auto;
-}
-
-.conteneur_info{
-    margin : 0 auto;
-    width: 45%;
-}
-
-.btn_acceuille{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
-    color: black;
-    padding: 10px;
-    width: 90%;
-    border-radius: 15px;
-    margin: 0 auto 25px auto;
-    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
-}
-
-.conteneur_prix{
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#btn_panier{
-    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
-    color: black;
-    padding: 10px;
-    width: 50%;
-    height: 25px;
-    border-radius: 15px;
-    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#btn_panier:disabled{
-    background-image: Linear-gradient(#221a16 0%,#20150f 85%);
-    color: white;
-}
-
-.conteneur_info h1{
-    font-weight: normal;
-    font-size: 2em;
-    margin-top: 0;
-    margin-left: 0;
-}
-
-select{
-    width: 100%;
-    height: 25px;
-    margin-bottom: 25px;
-}
-
-#prix_produit{
-    font-size: 2em;
-    margin: 0 25px;
-    display: flex;
-}
-
-
-/*-----------------------------------
-            FOOTER
------------------------------------*/
-
-footer{
-    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    color: black;
-}
-
-footer h2{
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-footer a {
-    margin-bottom: 5px;
-    color: black;
-}
-
+    -----------------------------------*/
+    #color_produit{
+        height: 50px;
+        font-size: 0.8em;
+    }
 }
