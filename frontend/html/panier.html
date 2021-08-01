@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Panier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/panier.css">
+    <script src="https://kit.fontawesome.com/afe2908dec.js" crossorigin="anonymous"></script>
+    <script src="../js/panier.js" async></script>
+</head>
+
+<body>
+    <header>
+        <h1>Oriteddy</h1>
+        <a href="#"><i class="fas fa-shopping-cart"></i>
+            <p>Mon panier</p>
+        </a>
+    </header>
+
+    <section class="conteneur_panier">
+        <h2>Mon panier</h2>
+        <ul id="liste_panier"></ul>
+        <div class="conteneur_btn"><a class="btn_acceuille" href="../index.html">Retour à la page d'acceuille</a></div>
+    </section>
+
+    <section class="conteneur_form">
+        <h2>Contact</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="lastName">Nom :</label>
+                    <input type="text" id="lastName" name="user_lastName" required pattern="[A-Za-z' -]{1,50}">
+                </div>
+                <div>
+                    <label for="firstName">Prénom :</label>
+                    <input type="text" id="firstName" name="user_firstName" required pattern="[A-Za-z' -]{1,50}">
+                </div>
+                <div>
+                    <label for="city">Ville :</label>
+                    <input type="text" id="city" name="user_city" required pattern="[A-Za-z' -]{1,50}">
+                </div>
+                <div>
+                    <label for="address">Adresse :</label>
+                    <input type="text" id="address" name="user_address" required pattern="[A-Za-z0-9' -]{1,50}">
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="user_email" required pattern="[A-Za-z' - @  .]{1,50}">
+                </div>
+                <div>
+                    <button type="button" id="button_form" disabled>Valider achats</button>
+                </div>
+
+            </form>
+    </section>
+    <footer>
+        <h2>Oriteddy</h2>
+        <div class="lien_footer">
+            <a href="#">Nous contacter</a>
+            <a href="#">Condition de renvoie</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">A propos</a>
+        </div>
+    </footer>
+</body>
+
+</html>

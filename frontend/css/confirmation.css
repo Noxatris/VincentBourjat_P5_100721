@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    background-image: url(../img/bg_3.jpg);
+    background-position: center;
+    background-size: auto 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+  }
+/*-----------------------------------
+            HEADER
+-----------------------------------*/
+header{
+    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    height: 70px;
+}
+
+h1{
+    display: flex;    
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+header a {
+    display: flex;
+    margin-right: 20px;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+header a p{
+    display: none;
+}
+
+/*-----------------------------------
+            INFO
+-----------------------------------*/
+.conteneur_information{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.conteneur_information div{
+    background: rgba(252, 198, 168, 0.75);
+    margin-bottom: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+
+#information{
+    background: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 475px;
+    justify-content: space-around;
+}
+
+#id_commande{
+    align-self: flex-start;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#prix_total{
+    align-self: flex-end;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.conteneur_information div p{
+    margin: 5px;
+}
+
+.btn_acceuille{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
+    color: black;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    margin: 0 auto 25px auto;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.remerciement p{
+    margin: 0;
+    font-size: 1.7em;
+}
+
+/*-----------------------------------
+            FOOTER
+-----------------------------------*/
+
+footer{
+    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: black;
+}
+
+footer h2{
+    margin-bottom: 10px;
+}
+
+.lien_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    margin-bottom: 5px;
+    color: black;
+}
+
+/*====================================================================================================================================
+                                                    TABLETTE PORTRAIT
+====================================================================================================================================*/
+@media only screen and (min-width: 600px) {
+    /*-----------------------------------
+            HEADER
+    -----------------------------------*/
+    header a p {     
+        display: initial;
+    }
+
+    /*-----------------------------------
+            INFO
+    -----------------------------------*/
+    #information{
+        height: 550px;
+    }
+
+    /*-----------------------------------
+            FOOTER
+    -----------------------------------*/
+
+    footer{
+        height: 100%;
+    }
+
+    .lien_footer{
+        flex-direction: row;
+    }
+
+        .lien_footer a {
+        margin-right: 30px;
+    }
+}

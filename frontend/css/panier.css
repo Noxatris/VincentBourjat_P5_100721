@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    background-image: Linear-gradient(#fad0b9 0%,#eb9465 85%);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input:valid{
+    background-color: greenyellow;
+}
+
+input:invalid{
+    background-color: rgba(247, 53, 53, 0.363);
+}
+
+/*-----------------------------------
+            HEADER
+-----------------------------------*/
+header{
+    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    height: 70px;
+}
+
+h1{
+    display: flex;    
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+header a {
+    display: flex;
+    margin-right: 20px;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+header a p{
+    display: none;
+}
+/*-----------------------------------
+            PANIER
+-----------------------------------*/
+
+.conteneur_panier{
+    background-image: url(../img/bg_1.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+}
+
+.conteneur_panier h2, .conteneur_form h2{
+    margin: 25px 0 0 0px;
+    align-self: flex-start;
+    background: #FCC6A8;
+    padding: 10px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#liste_panier{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: rgba(252, 198, 168, 0.5);
+    border-radius: 15px;
+    padding-left: 0;
+    align-items: center;
+    padding: 0px 15px;
+    font-weight: bold;
+}
+
+.prix_totale{
+    border-bottom: 0px;
+    justify-content: flex-end;
+}
+
+.prix_totale p{
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid black;
+    width: 100%;
+    justify-content: center;
+}
+
+li p {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_acceuille{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
+    color: black;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    margin: 0 auto 25px auto;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*-----------------------------------
+            FORM
+-----------------------------------*/
+.conteneur_form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+input{
+    border-radius: 15px;
+    height: 25px;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+label{
+    font-size: 1.2em;
+}
+
+button{
+    background: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
+    border-radius: 15px;
+    height: 30px;
+    width: 65%;
+    align-self: center;
+}
+
+input:focus{
+    appearance: none;
+    text-decoration: none;
+    border: 0px;
+}
+
+input:valid{
+    background-color: greenyellow;
+}
+
+input:invalid{
+    background-color: rgba(247, 53, 53, 0.363);
+}
+
+#button_form{
+    margin-top: 15px;
+}
+
+
+
+/*-----------------------------------
+            FOOTER
+-----------------------------------*/
+
+footer{
+    background-image: Linear-gradient(#FCC6A8 0%,#ED9F74 85%);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: black;
+}
+
+footer h2{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.lien_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    margin-bottom: 5px;
+    color: black;
+}
+
+/*====================================================================================================================================
+                                                    TABLETTE PORTRAIT
+====================================================================================================================================*/
+@media only screen and (min-width: 600px) {
+    /*-----------------------------------
+            HEADER
+    -----------------------------------*/
+    header a p {     
+        display: initial;
+    }
+}
+
+/*====================================================================================================================================
+                                                    TABLETTE PAYSAGE
+====================================================================================================================================*/
+@media only screen and (min-width: 801px) {
+
+    /*-----------------------------------
+            PANIER
+    -----------------------------------*/
+
+    .conteneur_panier{
+        background-size: 100% auto;
+    }
+
+    /*-----------------------------------
+            FORM
+    -----------------------------------*/
+    form{
+        width: 75%;
+    }
+
+}
+
+/*====================================================================================================================================
+                                                    PC
+====================================================================================================================================*/
+@media only screen and (min-width: 801px) {
+
+    /*-----------------------------------
+            PANIER
+    -----------------------------------*/
+    .conteneur_panier{
+        min-height: 400px;
+        margin: 40px auto 30px auto;
+        width: 65%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
+
+
+    }
+
+    /*-----------------------------------
+            FORM
+    -----------------------------------*/
+    .conteneur_form h2, .conteneur_panier h2{
+        width: 100%;
+        border-radius: 0px;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom: 3px solid rgb(78, 53, 36);
+    }
+
+    .conteneur_form{
+        width: 65%;
+        margin: 0px auto 40px auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
+
+    }
+
+    #button_form{
+        margin-bottom: 20px;
+    }
+
+    /*-----------------------------------
+            FOOTER
+    -----------------------------------*/
+    .lien_footer{
+        flex-direction: row;
+
+    }
+
+    .lien_footer a {
+        margin-right: 30px;
+    }
+
+}
