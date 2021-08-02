@@ -1,4 +1,4 @@
-let idProduit = localStorage.getItem("idProduit");
+let idProduit = searchId();
 let produit;
 let panier = [];
 
@@ -14,6 +14,11 @@ class ProduitPanier{
         this.color = color;
     }
 };
+
+function searchId(){
+    let id = window.location.search.slice(1);
+    return id;
+}
 
 // récupération des donnée du produit sélectionner
 fetch("http://localhost:3000/api/teddies/" + idProduit)
