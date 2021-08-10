@@ -15,6 +15,7 @@ class ProduitPanier{
     }
 };
 
+// Fonction récupérant l'id du produit dans l'URL
 function searchId(){
     let id = window.location.search.slice(1);
     return id;

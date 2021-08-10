@@ -4,6 +4,7 @@ let reponseCommande;
 let prixTotale = 0;
 let tabProduit= [];
 
+// Objet contact envoyé a l'API via le formulaire
 class Contact{
     constructor(nom, prenom, ville, adresse, email){
         this.firstName = prenom;
@@ -14,8 +15,9 @@ class Contact{
     }
 }
 
-
+// Actualise le panier en appelant 3 sous fonction
 actualisationPanier();
+
 
 async function actualisationPanier(){
     viderPanier();
@@ -24,6 +26,7 @@ async function actualisationPanier(){
 
 }
 
+// Appel la fonction creationElement pour chaque produit dans le panier
 async function ajoutPanier(listeProduit){
     for (let i=0; i<listeProduit.length; i++){
         console.log("Valeur de listeProduit id : " + listeProduit[i].id);
@@ -33,6 +36,7 @@ async function ajoutPanier(listeProduit){
     }
 }
 
+// Vide la panier
 function viderPanier(){
     let lePanier = document.getElementById("liste_panier");
     while(lePanier.firstChild){
@@ -41,7 +45,7 @@ function viderPanier(){
 }
 
 
-
+// Créé une ligne <li> avec les information qui lui sont passer et l'affiche
 function creationElement(value, color){
     let tabProduit = [];
 
@@ -72,7 +76,7 @@ function creationElement(value, color){
     document.getElementById("liste_panier").appendChild(tabProduit[0]);
 }
 
-
+// Ajoute une ligne <li> comportant le prix total de la commande
 async function affichagePrixTotale(){
     let total = document.createElement("p");   
     total.innerText = "Prix totale TTC : " + (prixTotale / 100) + ".00€";
@@ -128,6 +132,7 @@ function chkForm(){
     }
 }
 
+// Envoie les informations a l'API attend la réponse pour la stocker dans un localStorage via sauvegardeDonnée puis redirige l'utilisateur
 function envoiFormulaire(){
     let nom = document.getElementById("lastName").value;
     let prenom = document.getElementById("firstName").value;
@@ -174,14 +179,7 @@ function envoiFormulaire(){
 
 }
 
-
-
-function afficherCommande(){
-    console.log(reponseCommande["orderId"]);
-    console.log(reponseCommande["products"]);
-    console.log(reponseCommande["contact"]);
-}
-
+// Sauvegarde les données envoyé par l'API dans un localStorage
 function sauvegardeDonnee(){
     localStorage.setItem("commande", JSON.stringify(reponseCommande));
 }

@@ -1,9 +1,10 @@
 let commande = JSON.parse(localStorage.getItem("commande"));
 let idCommande = commande["orderId"];
 
-//localStorage.clear();
+localStorage.clear();
 prixFinal();
 
+// Affiche le prix total
 function prixFinal(){
     let prixTotal = 0;
     let listeProduit = commande["products"];
@@ -17,4 +18,5 @@ function prixFinal(){
 
 console.log(commande);
 
+// Affiche l'Id de commande
 document.getElementById("orderId").innerText = idCommande;

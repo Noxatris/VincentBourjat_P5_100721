@@ -74,7 +74,3 @@ function creationProduit(value){
     let conteneurProduit = document.getElementsByClassName("listeProduit");
     conteneurProduit[0].appendChild(tabProduit[0]);
 }
-
-document.getElementById("clear_panier").addEventListener("click", function(e){
-    localStorage.clear();
-});
