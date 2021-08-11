@@ -15,7 +15,8 @@ fetch("http://localhost:3000/api/teddies")
     })
     .catch(function(err){
         console.log(err);
-    });
+});
+
 
 // Affiche tout les produits
 function affichageProduit(donneeApi){
@@ -63,11 +64,6 @@ function creationProduit(value){
     tabProduit[5].classList.add("info_prix");
 
     // Ajout des event
-    tabProduit[0].addEventListener("click", function(e){ // Function afin de récupérer l'id du produit
-        console.log("Valeur de this : " + this.id);
-        localStorage.setItem("idProduit", this.id); // Sauvegarde de l'Id du produit
-    }
-    );
     tabProduit[0].setAttribute("href", "frontend/html/pageProduit.html?"+ value["_id"])
     tabProduit[0].id = value["_id"];
 
