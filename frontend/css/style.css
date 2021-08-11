@@ -56,7 +56,14 @@ header a p {
 .description {
     background: rgba(252, 198, 168, 0.75);
     height: 75px;
-    width: 80%;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+#description2 p{
+    margin-left: 10px;
 }
 
 #description1{
