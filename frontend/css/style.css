@@ -281,6 +281,13 @@ footer a {
 @media only screen and (min-width: 801px) {
 
     /*-----------------------------------
+            PRESENTATION
+    -----------------------------------*/
+    .description{
+        font-size: 1.2em;
+    }
+
+    /*-----------------------------------
             Produit
     -----------------------------------*/
     .titre_section {
