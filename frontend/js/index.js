@@ -64,8 +64,7 @@ function creationProduit(value){
     tabProduit[5].classList.add("info_prix");
 
     // Ajout des event
-    tabProduit[0].setAttribute("href", "frontend/html/pageProduit.html?"+ value["_id"])
-    tabProduit[0].id = value["_id"];
+    tabProduit[0].setAttribute("href", "frontend/html/pageProduit.html?"+ value["_id"]);
 
     let conteneurProduit = document.getElementsByClassName("listeProduit");
     conteneurProduit[0].appendChild(tabProduit[0]);
