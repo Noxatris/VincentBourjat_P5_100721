@@ -166,7 +166,6 @@ function envoiFormulaire(){
     })
     .then(function(value){
         reponseCommande = value;
-        afficherCommande();
         console.log("Donnée renvoyé par l'API : " + value["orderId"]);
     })
     .then(function(){
